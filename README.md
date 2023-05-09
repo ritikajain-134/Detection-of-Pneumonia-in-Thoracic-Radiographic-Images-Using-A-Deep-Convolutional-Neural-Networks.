@@ -19,13 +19,4 @@ Visualization: Visualize the activations of the CNN to gain insights into how it
 
 
 Deployment: Once the CNN has been trained and tested, it can be deployed as a diagnostic tool for detecting pneumonia in thoracic radiographic images. This would involve integrating the CNN into a larger medical imaging system that can receive input images and output a diagnosis.
-![Screenshot (52)](https://user-images.githubusercontent.com/119391664/237013096-0cec41d7-4018-4720-aff5-d84d4eee47cf.png)
-![Screenshot (61)](https://user-images.githubusercontent.com/119391664/237013150-60204676-514e-49d9-831f-2896f9373d70.png)
-![Screenshot (60)](https://user-images.githubusercontent.com/119391664/237013160-f52147fa-cf7d-444d-a841-53dc326da99b.png)
-![Screenshot (59)](https://user-images.githubusercontent.com/119391664/237013163-f8f42a26-4c05-4f24-be5a-c9054bdf835d.png)
-![Screenshot (58)](https://user-images.githubusercontent.com/119391664/237013173-6b3208c9-f657-4d66-8194-161047946883.png)
-![Screenshot (56)](https://user-images.githubusercontent.com/119391664/237013180-c7596475-b86f-425d-ad5a-0297763ea137.png)
-![Screenshot (55)](https://user-images.githubusercontent.com/119391664/237013187-37a04287-c955-456a-85dd-8e5d47d6cdae.png)
-![Screenshot (54)](https://user-images.githubusercontent.com/119391664/237013193-2d9e5a37-ad93-4cd5-aed6-202b9231f16e.png)
-![Screenshot (53)](https://user-images.githubusercontent.com/119391664/237013202-678dfad4-41ac-4f71-8722-5c7e1401ef1f.png)
-![Screenshot (52)](https://user-images.githubusercontent.com/119391664/237013206-426d5b4c-9e38-46b1-825d-bc69a5694395.png)
+
