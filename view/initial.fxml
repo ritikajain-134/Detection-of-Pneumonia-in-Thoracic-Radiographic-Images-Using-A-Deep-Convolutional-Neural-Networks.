@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../style/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.controllers.InitialController">
+    <children>
+      <MediaView fx:id="mv" fitHeight="1080.0" fitWidth="1920.0" />
+      <AnchorPane opacity="0.82" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: rgba(0,0,0,0.7);">
+         <children>
+            <AnchorPane fx:id="rightpane" layoutY="50.0" prefHeight="1030.0" prefWidth="1920.0">
+               <children>
+                  <AnchorPane prefHeight="1030.0" prefWidth="630.0" style="-fx-background-color: rgba(255,255,255,0.1);">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="175.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Immediate Care" textAlignment="CENTER" wrappingWidth="452.90821075439453">
+                           <font>
+                              <Font name="System Bold" size="54.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="#ffffff63" layoutX="299.0" layoutY="539.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                        <Circle fx:id="onPluseClickButton" fill="DODGERBLUE" layoutX="299.0" layoutY="539.0" radius="45.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="202.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Michigan Avenue" wrappingWidth="237.24951171875">
+                           <font>
+                              <Font name="Blackadder ITC" size="29.0" />
+                           </font>
+                        </Text>
+                        <Line endX="272.0" endY="-98.0" layoutX="284.0" layoutY="734.0" startX="-194.0" startY="-98.0" stroke="WHITE" visible="false" />
+                        <ImageView fitHeight="51.0" fitWidth="53.0" layoutX="274.0" layoutY="511.0" visible="false">
+                           <image>
+                              <Image url="@../img/icon/icons8-plus-64.png" />
+                           </image>
+                        </ImageView>
+                        <Pane id="illustrations" layoutX="-12.0" layoutY="233.0" onMouseEntered="#mouseEntered" onMouseExited="#mouseExit" prefHeight="794.0" prefWidth="496.0" />
+                        <Pane id="illustrations_dream" fx:id="dreambubble" layoutX="191.0" layoutY="183.0" onMouseEntered="#mouseEntered" onMouseExited="#mouseExit" prefHeight="200.0" prefWidth="226.0" rotate="-7.6">
+                           <children>
+                              <JFXButton fx:id="continueButton" alignment="CENTER" layoutX="91.0" layoutY="75.0" onAction="#onContinueButtonClick" prefHeight="45.0" prefWidth="128.0" rotate="90.0" style="-fx-background-radius: 80; -fx-border-radius: 80;" text="Let's go👇" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="blur" layoutX="630.0" opacity="0.75" prefHeight="1030.0" prefWidth="1290.0" style="-fx-background-color: linear-gradient(to top, #43cea2, #185a9d);">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="70.0" layoutY="550.0" prefHeight="425.0" prefWidth="520.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0">
+                                 <image>
+                                    <Image url="@../img/icon/icons8-appointment-64.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="Book an Appointment " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <Label text="TELEMEDICINE available" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Staggered In-Office Appointments" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton prefHeight="49.0" prefWidth="223.0" style="-fx-background-color: fff;" text="Book Appointment →">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <Line endX="37.0" endY="519.0" layoutX="603.0" layoutY="455.0" startX="37.0" startY="-34.333343505859375" stroke="WHITE" />
+                        <VBox alignment="CENTER" layoutX="700.0" layoutY="538.0" prefHeight="425.0" prefWidth="520.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0">
+                                 <image>
+                                    <Image url="@../img/icon/icons8-clock-80.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="Open today at 8:00 am" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <Label text="TELEMEDICINE available" textFill="WHITE">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Staggered In-Office Appointments" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton prefHeight="49.0" prefWidth="223.0" style="-fx-background-color: fff;" text="Pneumonia ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="146.0" layoutY="58.0" prefHeight="35.0" prefWidth="708.0" spacing="50.0">
+                           <children>
+                              <Label text="BECOME A PATIENT" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label text="YOUR VISIT" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label text="SERVICES" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="35.0" text="ABOUT " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label layoutX="1139.0" layoutY="58.0" onMouseEntered="#onmouseEnteredmenu" onMouseExited="#onmouseExitmenu" text="MENU" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView layoutX="1215.0" layoutY="47.0" onMouseEntered="#onmouseEnteredmenu" onMouseExited="#onmouseExitmenu">
+                           <image>
+                              <Image url="@../img/icon/icons8-menu-60.png" />
+                           </image>
+                        </ImageView>
+                        <VBox fx:id="menuvbox" layoutX="1150.0" layoutY="120.0" prefHeight="178.0" prefWidth="120.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-radius: 20;" text="About Test" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-radius: 20;" text="About Us" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-radius: 20;" text="Contact" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-radius: 20;" text="More" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label layoutX="44.0" layoutY="169.0" prefHeight="222.0" prefWidth="1071.0" text="Detection of Pneumonia in Thoracic  Radiographic Images Using A Deep Convolutional Neural Networks" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold Italic" size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="50.0" prefWidth="1920.0" style="-fx-background-color: rgba(255,255,255,0.6); -fx-background-radius: 0 50 50 0;">
+               <children>
+                  <HBox layoutY="10.0" prefHeight="31.0" prefWidth="1870.0">
+                     <children>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Primary Care">
+                           <HBox.margin>
+                              <Insets left="700.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="130.0" text="Immediate Care">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="130.0" text="Hearing Health">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Ear, Nose &amp; Threat">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Contact Us">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="130.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Patient Portal">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Insurance">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Pay Your Bill">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <AnchorPane fx:id="leftpane" layoutX="-1930.0" layoutY="50.0" prefHeight="1030.0" prefWidth="1920.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton id="closebtn" layoutX="1870.0" onAction="#onCloseClick" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 50; -fx-border-radius: 50;" styleClass="clode-button" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

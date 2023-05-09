@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="812.0" prefWidth="1342.0" style="-fx-background-color: rgba(255,255,255,0.2); -fx-background-radius: 60 0 0 0; -fx-border-radius: 60 0 0 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.controllers.Algo_showController">
+   <children>
+      <TabPane prefHeight="812.0" prefWidth="1342.0" side="BOTTOM" style="-fx-background-color: transferent;" styleClass="anchorpane_singlepost" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="TEXT">
+               <content>
+                  <JFXTextArea fx:id="outputTextArea" editable="false" labelFloat="true" prefHeight="770.0" prefWidth="1324.0" style="-fx-text-inner-color: fff;">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="100.0" right="100.0" />
+                     </padding>
+                  </JFXTextArea>
+               </content>
+          </Tab>
+          <Tab fx:id="imgPane" text="IMAGES">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-radius: 60 0 0 0; -fx-border-radius: 60 0 0 0;">
+                     <children>
+                        <ScrollPane layoutX="20.0" layoutY="15.0" prefHeight="740.0" prefWidth="580.0" stylesheets="@../style/main.css">
+                           <content>
+                              <GridPane fx:id="gridshowdata" hgap="10.0" prefHeight="740.0" prefWidth="580.0" style="-fx-background-radius: 60 0 0 0; -fx-border-radius: 60 0 0 0;" vgap="10.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <padding>
+                                    <Insets left="10.0" top="20.0" />
+                                 </padding>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                        <ImageView fx:id="previewShow" fitHeight="740.0" fitWidth="700.0" layoutX="625.0" layoutY="15.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

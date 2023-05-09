@@ -1,0 +1,57 @@
+.box{
+    /*-fx-background-color:linear-gradient(to right, #70e1f5, #ffd194);*/
+    -fx-background-color:  linear-gradient(to left, #3a7bd5, #3a6073);
+    -fx-background-radius:20;
+    -fx-border-radius:20;
+}
+.my-btn-class {
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-font-size: 22px;
+}
+
+.my-btn-class:hover {
+    -fx-text-fill: rgb(194, 68, 111);
+    -fx-font-size: 26px;
+}
+
+.imgcurv {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.9), 7, 0, 0, 0);
+    -fx-padding: 20 0 0 0;
+}
+.imgcurv:hover{
+    -fx-translate-z:-50;
+}
+.transperent:effect {
+    -fx-background-color: rgba(255, 255, 255,0.8);
+    -fx-background-radius: 20;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+#main_bg{
+    -fx-background-image: url("../img/Bg/fusion-medical-animation-rnr8D3FNUNY-unsplash.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center ;
+    /*-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+}
+#blur {
+    -fx-border:1px dashed #ddd;
+    color:#999;
+}
+#fade_circle{
+    -fx-background-color: red;
+}
+#circleID{
+    -fx-fill:red;
+}
+#circleID:hover{
+    -fx-fill:blue;
+
+}
+

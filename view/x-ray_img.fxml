@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="240.0" style="-fx-background-radius: 30; -fx-background-color: pink; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.code.controllers.X_ray_imgController">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="240.0" fx:id="xray_img">
+         <image>
+            <Image url="@../../../../../../../../../dataset/input/chest-xray-pneumonia/chest_xray/test/PNEUMONIA/person1_virus_8.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
